@@ -1,0 +1,26 @@
+.forBackground {
+  height: 22rem;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/heroBackground.jpg");
+  background-repeat: no-repeat;
+}
+.searchForm {
+  display: block;
+  @extend %center-align;
+}
+.wrapper {
+  width: 85%;
+}
+.button {
+  @extend %center-align;
+  width: 23rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: $font-size;
+  background: $action-color;
+  padding: 2rem 5rem;
+  border-radius: 0.5rem;
+}

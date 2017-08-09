@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link the javascript file -->
+    <script src="javascript/main.js" defer></script>
+    <!-- link the css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Add a title and icon to the website -->
+    <link rel="icon" type="image/png" href="images/Marvel-logo.png">
+    <title>Marvel Hero Search</title>
+  </head>
+  <body>
+    <!-- A div to get the background for the head and search section -->
+    <div class="forBackground">
+      <header>
+        <!-- a div to constrain the content to a certain width -->
+        <div class="wrapper">
+          <h1>
+            <a href="index.html">
+              <img src="images/marvelLogo.png" alt="">
+            </a>
+          </h1>
+          <button id="openNav">Open Navigation</button>
+
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+
+
+        </div>
+      </header>
+      <!-- section for the search form -->
+      <section id="search">
+        <div class="searchForm">
+          <form>
+            <label for="search">Search for comic books for your favorite hero.</label>
+            <input type="text" name="search" placeholder="ex: Wolverine">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- section for the search results -->
+    <section id="results">
+      <div class="wrapper">
+        <h2>Results for Wolverine</h2>
+        <p class="button"><a href="#">View more from Marvel</a></p>
+      </div>
+    </section>
+    <!-- the footer -->
+    <footer>
+      <p>Built by Kloe Rogers for DWS2</p>
+    </footer>
+  </body>
+</html>

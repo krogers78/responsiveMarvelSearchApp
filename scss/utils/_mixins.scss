@@ -1,0 +1,6 @@
+@mixin article-description($back-color, $color, $width, $left-pad) {
+  background: $back-color;
+  color: $color;
+  width: $width;
+  padding-left: $left-pad;
+}
