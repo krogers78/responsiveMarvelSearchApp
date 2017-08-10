@@ -1,4 +1,4 @@
-.searchForm, .button, #results .wrapper {
+.searchForm, .wrapper, .button, #results .wrapper {
   margin-left: auto;
   margin-right: auto; }
 
@@ -87,11 +87,10 @@ header {
   width: 100%; }
   header h1 {
     float: left;
-    width: 10rem; }
+    width: 40%; }
   header img {
     width: 100%;
-    padding: 2rem 0 0 2rem;
-    margin-left: 10rem; }
+    padding: 2rem 0 0 2rem; }
   header nav {
     float: right;
     padding-bottom: 2rem; }
@@ -117,7 +116,8 @@ header {
   width: 100%;
   background-size: cover;
   background-image: url("../images/heroBackground.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .searchForm {
   display: block; }
@@ -138,7 +138,7 @@ header {
 
 #search form {
   padding-top: 5rem;
-  width: 20rem;
+  width: 80%;
   margin-left: auto;
   position: relative;
   margin-right: auto; }
@@ -162,10 +162,10 @@ header {
   background-image: url("../images/search.png");
   background-color: transparent;
   text-indent: -999rem;
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
-  left: 17.8rem;
+  right: 0.5rem;
   top: 6.8rem;
   background-size: 2rem;
   background-repeat: no-repeat; }
@@ -175,8 +175,7 @@ header {
   padding-left: 0.3rem;
   font-size: 1.3rem;
   color: #EEE;
-  background: #222;
-  width: 25rem; }
+  background: #222; }
 
 #results article {
   overflow: auto;
@@ -192,6 +191,7 @@ header {
     padding-left: 0.2rem;
     float: right; }
   #results article h3 {
+    padding-top: 0.6rem;
     color: #FF0000;
     filter: brightness(95%); }
   #results article p {
@@ -200,11 +200,19 @@ header {
 #results a {
   font-size: 1.3rem; }
 
-@media (min-width: 480px) {
+@media (min-width: 425px) {
+  header img {
+    margin-left: 0; }
+  header button {
+    background-size: 3rem;
+    height: 3rem;
+    width: 3rem; }
   #results h2 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .forClasses {
+    background-position: unset; } }
 
-.modal {
+.navBar {
   display: none;
   position: fixed;
   z-index: 1;
@@ -215,8 +223,6 @@ header {
   overflow: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s; }
 
@@ -228,18 +234,8 @@ span {
   top: 0;
   background-color: #222;
   width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s; }
-
-@-webkit-keyframes slideIn {
-  from {
-    top: -300px;
-    opacity: 0; }
-  to {
-    top: 0;
-    opacity: 1; } }
 
 @keyframes slideIn {
   from {
@@ -247,12 +243,6 @@ span {
     opacity: 0; }
   to {
     top: 0;
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
     opacity: 1; } }
 
 @keyframes fadeIn {

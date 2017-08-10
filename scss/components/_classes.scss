@@ -4,6 +4,7 @@
   background-size: cover;
   background-image: url("../images/heroBackground.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .searchForm {
   display: block;
@@ -11,6 +12,7 @@
 }
 .wrapper {
   width: 85%;
+  @extend %center-align;
 }
 .button {
   @extend %center-align;

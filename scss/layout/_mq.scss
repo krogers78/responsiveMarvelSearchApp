@@ -1,0 +1,21 @@
+// first breakpoint
+@media (min-width: 425px) {
+  header {
+    img {
+      margin-left: 0;
+    }
+    button {
+      background-size: 3rem;
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  #results {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .forClasses {
+    background-position: unset;
+  }
+}

@@ -46,8 +46,10 @@ const renderData = (data) => {
 
       results += `<a href="${item.urls[0].url}" target="_blank"><article>
                   <img src="${item.thumbnail.path}.${item.thumbnail.extension}">
+                  <div class="comicMeta">
                   <h3>${item.title}</h3>
                   <p>Issue Number ${item.issueNumber}</p>
+                </div>
                 </article></a>`
   }
 })

@@ -1,4 +1,4 @@
-.modal {
+.navBar {
     display: none;
     position: fixed;
     z-index: 1;
@@ -9,8 +9,6 @@
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
 }
@@ -22,22 +20,12 @@ span {
     top: 0;
     background-color: $seconday-color;
     width: 100%;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
-}
-@-webkit-keyframes slideIn {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
 }
 @keyframes slideIn {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
-}
-@-webkit-keyframes fadeIn {
-    from {opacity: 0}
-    to {opacity: 1}
 }
 @keyframes fadeIn {
     from {opacity: 0}
