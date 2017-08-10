@@ -14,13 +14,16 @@
     animation-name: fadeIn;
     animation-duration: 0.4s
 }
+span {
+  color: $primary-color;
+}
 .modal-content {
     position: fixed;
     top: 0;
     background-color: $seconday-color;
     width: 100%;
-    // -webkit-animation-name: slideIn;
-    // -webkit-animation-duration: 0.4s;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
 }

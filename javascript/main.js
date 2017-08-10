@@ -59,20 +59,15 @@ const renderData = (data) => {
   results = ""
 }
 
+// JavaScript for the nav menu
 const modal = document.querySelector('#myModal')
 const btn = document.querySelector('#openNav')
 const span = document.querySelector('#myModal span')
 
-btn.onclick = () => {
-  modal.style.display = 'block'
-}
-
-span.onclick = () => {
-  modal.display = 'none'
-}
-
-window.onclick = e => {
-  if (e.target == modal) {
+btn.addEventListener('click', () => modal.style.display = 'block')
+span.addEventListener('click', () => modal.style.display = 'none')
+window.addEventListener('click', e => {
+  if(e.target == modal) {
     modal.style.display = 'none'
   }
-}
+})
