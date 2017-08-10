@@ -7,15 +7,18 @@ header {
     width: 10rem;
   }
   img {
-    width: 50%;
+    width: 100%;
     // padding-top: 2rem;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 0 2rem;
+    margin-left: 10rem;
+    // @extend %center-align;
   }
   nav {
     float: right;
+    padding-bottom: 2rem;
     // padding: 4rem;
     li {
-      display: inline;
+      // display: inline;
       padding-right: 4rem;
     }
   }
@@ -35,6 +38,6 @@ header {
     background-size: 2rem;
     height: 2rem;
     width: 2rem;
-
+    margin-top: 2rem;
   }
 }

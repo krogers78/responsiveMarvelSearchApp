@@ -14,12 +14,12 @@
 }
 .button {
   @extend %center-align;
-  width: 23rem;
+  width: 25rem;
   margin-top: 8rem;
   margin-bottom: 5rem;
   text-align: center;
   font-weight: bold;
-  font-size: $font-size;
+  font-size: 1.3rem;
   background: $action-color;
   padding: 2rem 5rem;
   border-radius: 0.5rem;

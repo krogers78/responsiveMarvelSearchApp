@@ -58,3 +58,21 @@ const renderData = (data) => {
   searchSection.innerHTML = results
   results = ""
 }
+
+const modal = document.querySelector('#myModal')
+const btn = document.querySelector('#openNav')
+const span = document.querySelector('#myModal span')
+
+btn.onclick = () => {
+  modal.style.display = 'block'
+}
+
+span.onclick = () => {
+  modal.display = 'none'
+}
+
+window.onclick = e => {
+  if (e.target == modal) {
+    modal.style.display = 'none'
+  }
+}
