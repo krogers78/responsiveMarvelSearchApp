@@ -1,6 +1,6 @@
-@mixin article-description($back-color, $color, $width, $left-pad) {
+@mixin article-description($back-color, $color, $left-pad, $right-pad) {
   background: $back-color;
   color: $color;
-  width: $width;
   padding-left: $left-pad;
+  padding-right: $right-pad;
 }

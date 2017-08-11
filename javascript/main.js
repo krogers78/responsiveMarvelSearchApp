@@ -27,8 +27,10 @@ form.addEventListener('submit', e => {
     })
     .catch(error => {
       console.log('An Error Occured:', error)
-      searchSection.innerHTML = `<div class="wrapper">
-                  <h2>Results for ${input.value}</h2>
+      searchSection.innerHTML = `
+        <h2>Results for ${input.value}</h2>
+                  <div class="wrapper">
+
                   <p>No results to show</p>
                   <p class="button"><a href="#">View More on Marvel</a></p>
                   </div>`
@@ -38,8 +40,8 @@ form.addEventListener('submit', e => {
 let results = ""
 
 const renderData = (data) => {
-  results += `<div class="wrapper">
-              <h2>Results for ${input.value}</h2>`
+  results += `<h2>Results for ${input.value}</h2>
+              <div class="wrapper">`
 
   data.forEach((item, index) => {
     if(item.title) {

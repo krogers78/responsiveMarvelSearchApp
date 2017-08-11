@@ -43,26 +43,24 @@
     font-size: 1.3rem;
     color: $primary-color;
     background: $seconday-color;
-    // width: 25rem;
   }
   article {
-    // height: 16.5rem;
+    display: flex;
     overflow: auto;
     background-color: $seconday-color;
     margin-bottom: 1rem;
     img {
-      // width: 10.9rem;
       width: 40%;
-      float: left;
+      height: 100%;
     }
     h3, p {
-      @include article-description($seconday-color, $primary-color, 55%, 0.2rem);
-      float: right;
+      @include article-description($seconday-color, $primary-color, 1rem, 1rem);
     }
     h3 {
       padding-top: 0.6rem;
       color: #FF0000;
       filter: brightness(95%);
+      font-size: 1.2rem;
     }
     p {
       font-size: 1rem;

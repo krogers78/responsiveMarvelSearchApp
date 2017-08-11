@@ -1,5 +1,9 @@
 // first breakpoint
 @media (min-width: 425px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   header {
     img {
       margin-left: 0;
@@ -10,12 +14,77 @@
       width: 3rem;
     }
   }
+  #search {
+    label {
+      font-size: 1.2rem;
+      width: 25rem;
+    }
+  }
   #results {
+    .wrapper {
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     h2 {
       font-size: 1.5rem;
     }
+    article {
+      flex-flow: column;
+      width: 90%;
+      img {
+        width: 100%;
+        height: 100%;
+
+
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    a {
+      width: 50%;
+    }
   }
-  .forClasses {
-    background-position: unset;
+  // .forBackground {
+  //   background-position: unset;
+  // }
+}
+@media (min-width: 768px) {
+  header {
+    h1 {
+      float: none;
+    }
+    button {
+      display: none;
+    }
+    nav {
+      padding-top: 2rem;
+    }
+    a {
+      font-size: 1.8rem;
+    }
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+    }
+    span {display: none;}
+    .navBar {
+      display:block;
+      position: relative;
+      z-index: 0;
+      background-color: transparent;
+      animation-duration: 0s;
+    }
+    .modal-content {
+      position: relative;
+      background-color: transparent;
+      animation-duration: 0s;
+    }
   }
+
 }

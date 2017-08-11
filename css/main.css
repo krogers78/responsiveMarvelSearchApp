@@ -101,6 +101,8 @@ header {
     font-size: 1rem; }
     header a:hover {
       color: white; }
+  header span {
+    color: #EEE; }
   header button {
     text-indent: -999rem;
     background-color: transparent;
@@ -178,22 +180,23 @@ header {
   background: #222; }
 
 #results article {
+  display: flex;
   overflow: auto;
   background-color: #222;
   margin-bottom: 1rem; }
   #results article img {
     width: 40%;
-    float: left; }
+    height: 100%; }
   #results article h3, #results article p {
     background: #222;
     color: #EEE;
-    width: 55%;
-    padding-left: 0.2rem;
-    float: right; }
+    padding-left: 1rem;
+    padding-right: 1rem; }
   #results article h3 {
     padding-top: 0.6rem;
     color: #FF0000;
-    filter: brightness(95%); }
+    filter: brightness(95%);
+    font-size: 1.2rem; }
   #results article p {
     font-size: 1rem; }
 
@@ -201,16 +204,61 @@ header {
   font-size: 1.3rem; }
 
 @media (min-width: 425px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between; }
   header img {
     margin-left: 0; }
   header button {
     background-size: 3rem;
     height: 3rem;
     width: 3rem; }
+  #search label {
+    font-size: 1.2rem;
+    width: 25rem; }
+  #results .wrapper {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center; }
   #results h2 {
     font-size: 1.5rem; }
-  .forClasses {
-    background-position: unset; } }
+  #results article {
+    flex-flow: column;
+    width: 90%; }
+    #results article img {
+      width: 100%;
+      height: 100%; }
+    #results article h3 {
+      font-size: 1.5rem; }
+    #results article p {
+      font-size: 1.2rem; }
+  #results a {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  header h1 {
+    float: none; }
+  header button {
+    display: none; }
+  header nav {
+    padding-top: 2rem; }
+  header a {
+    font-size: 1.8rem; }
+  header ul {
+    display: flex;
+    justify-content: flex-end; }
+  header span {
+    display: none; }
+  header .navBar {
+    display: block;
+    position: relative;
+    z-index: 0;
+    background-color: transparent;
+    animation-duration: 0s; }
+  header .modal-content {
+    position: relative;
+    background-color: transparent;
+    animation-duration: 0s; } }
 
 .navBar {
   display: none;
@@ -225,9 +273,6 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
   animation-name: fadeIn;
   animation-duration: 0.4s; }
-
-span {
-  color: #EEE; }
 
 .modal-content {
   position: fixed;

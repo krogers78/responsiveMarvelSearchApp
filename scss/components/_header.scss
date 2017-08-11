@@ -8,16 +8,12 @@ header {
   }
   img {
     width: 100%;
-    // padding-top: 2rem;
     padding: 2rem 0 0 2rem;
-    // margin-left: 10rem;
   }
   nav {
     float: right;
     padding-bottom: 2rem;
-    // padding: 4rem;
     li {
-      // display: inline;
       padding-right: 4rem;
     }
   }
@@ -28,6 +24,9 @@ header {
     &:hover {
       color: white;
     }
+  }
+  span {
+    color: $primary-color;
   }
   button {
     text-indent: -999rem;
