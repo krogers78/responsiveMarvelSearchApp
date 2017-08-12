@@ -86,23 +86,24 @@ header {
   text-align: right;
   width: 100%; }
   header h1 {
-    float: left;
-    width: 40%; }
+    width: 40%;
+    float: left; }
   header img {
     width: 100%;
-    padding: 2rem 0 0 2rem; }
+    margin: 2rem 0 0 2rem; }
   header nav {
-    float: right;
     padding-bottom: 2rem; }
     header nav li {
-      padding-right: 4rem; }
+      padding-right: 4rem;
+      padding-bottom: 0.5rem; }
   header a {
     color: #DDD;
-    font-size: 1rem; }
+    font-size: 2rem; }
     header a:hover {
       color: white; }
   header span {
-    color: #EEE; }
+    color: #EEE;
+    font-size: 4rem; }
   header button {
     text-indent: -999rem;
     background-color: transparent;
@@ -114,12 +115,10 @@ header {
     margin-top: 2rem; }
 
 .forBackground {
-  height: 22rem;
   width: 100%;
   background-size: cover;
   background-image: url("../images/heroBackground.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-repeat: no-repeat; }
 
 .searchForm {
   display: block; }
@@ -140,6 +139,7 @@ header {
 
 #search form {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   width: 80%;
   margin-left: auto;
   position: relative;
@@ -177,7 +177,11 @@ header {
   padding-left: 0.3rem;
   font-size: 1.3rem;
   color: #EEE;
-  background: #222; }
+  background: #222;
+  width: 80%;
+  margin: 2rem auto 0 auto; }
+  #results h2 span {
+    color: #FF0000; }
 
 #results article {
   display: flex;
@@ -216,6 +220,8 @@ header {
   #search label {
     font-size: 1.2rem;
     width: 25rem; }
+  #search button {
+    top: 7.2rem; }
   #results .wrapper {
     flex-flow: row;
     flex-wrap: wrap;
@@ -233,7 +239,9 @@ header {
     #results article p {
       font-size: 1.2rem; }
   #results a {
-    width: 50%; } }
+    width: 50%; }
+  footer p {
+    font-size: 1.5rem; } }
 
 @media (min-width: 768px) {
   header h1 {
@@ -258,7 +266,23 @@ header {
   header .modal-content {
     position: relative;
     background-color: transparent;
-    animation-duration: 0s; } }
+    animation-duration: 0s; }
+  #search label {
+    font-size: 1.8rem;
+    width: 38rem; }
+  #search input {
+    height: 4.5rem; }
+  #search button {
+    top: 8.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-size: 3rem; }
+  #results h2 {
+    font-size: 1.8rem; }
+  #results a {
+    width: 33%; }
+  footer p {
+    font-size: 1.8rem; } }
 
 .navBar {
   display: none;

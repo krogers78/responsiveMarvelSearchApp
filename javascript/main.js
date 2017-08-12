@@ -40,7 +40,7 @@ form.addEventListener('submit', e => {
 let results = ""
 
 const renderData = (data) => {
-  results += `<h2>Results for ${input.value}</h2>
+  results += `<h2>Results for <span>${input.value}</span></h2>
               <div class="wrapper">`
 
   data.forEach((item, index) => {

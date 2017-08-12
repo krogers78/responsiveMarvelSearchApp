@@ -3,23 +3,23 @@ header {
   text-align: right;
   width: 100%;
   h1 {
-    float:left;
     width: 40%;
+    float: left;
   }
   img {
     width: 100%;
-    padding: 2rem 0 0 2rem;
+    margin: 2rem 0 0 2rem;
   }
   nav {
-    float: right;
     padding-bottom: 2rem;
     li {
       padding-right: 4rem;
+      padding-bottom: 0.5rem;
     }
   }
   a {
     color: #DDD;
-    font-size: 1rem;
+    font-size: 2rem;
 
     &:hover {
       color: white;
@@ -27,6 +27,7 @@ header {
   }
   span {
     color: $primary-color;
+    font-size: 4rem;
   }
   button {
     text-indent: -999rem;

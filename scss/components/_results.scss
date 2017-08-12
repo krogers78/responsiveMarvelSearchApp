@@ -43,6 +43,11 @@
     font-size: 1.3rem;
     color: $primary-color;
     background: $seconday-color;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    span {
+      color: #FF0000;
+    }
   }
   article {
     display: flex;
