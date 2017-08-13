@@ -4,3 +4,17 @@
   padding-left: $left-pad;
   padding-right: $right-pad;
 }
+@mixin mq($size) {
+  @if $size == small {
+    @media (min-width: 425px) { @content; }
+  }
+  @else if $size == medium {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $size == large {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $size == xlarge {
+    @media (min-width: 1200px) { @content; }
+  }
+}

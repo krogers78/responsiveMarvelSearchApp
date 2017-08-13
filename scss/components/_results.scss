@@ -1,62 +1,42 @@
-// #results {
-//   .wrapper {
-//     @extend %center-align;
-//   }
-//   h2 {
-//     margin: 2rem 0 2rem 0;
-//     padding-left: 0.3rem;
-//     font-size: $font-size;
-//     color: $primary-color;
-//     background: $seconday-color;
-//     width: 25rem;
-//   }
-//   article {
-//     width: 25%;
-//     display: inline-table;
-//     padding-bottom: 5rem;
-//
-//     img {
-//       width: 80%;
-//       height: 200%;
-//     }
-//     h3, p {
-//       @include article-description($seconday-color, $primary-color, 100%, 0.2rem);
-//     }
-//     // p {
-//     //   @include article-description($seconday-color, $primary-color, 90%, 0.2rem);
-//     // }
-//   }
-//   a {
-//     font-size: 1.3rem;
-//     color: #222;
-//   }
-// }
-
-// mobile size
 #results {
   .wrapper {
     @extend %center-align;
+    @include mq(small) {
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   h2 {
     margin: 2rem 0 2rem 0;
     padding-left: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: $primary-color;
     background: $seconday-color;
-    width: 80%;
-    margin: 2rem auto 0 auto;
+    width: 85%;
+    margin: 2rem auto;
     span {
       color: #FF0000;
     }
+    @include mq(small) { font-size: 1.6rem; }
   }
   article {
     display: flex;
     overflow: auto;
     background-color: $seconday-color;
     margin-bottom: 1rem;
+    @include mq(small) {
+      flex-flow: column;
+      width: 90%;
+      margin-bottom: 3rem;
+    }
     img {
       width: 40%;
       height: 100%;
+      @include mq(small) {
+        width: 100%;
+        // height: 100%;
+      }
     }
     h3, p {
       @include article-description($seconday-color, $primary-color, 1rem, 1rem);
@@ -66,12 +46,15 @@
       color: #FF0000;
       filter: brightness(95%);
       font-size: 1.2rem;
+      @include mq(small) { font-size: 1.5rem; }
     }
     p {
       font-size: 1rem;
+      @include mq(small) { font-size: 1.2rem; }
     }
   }
   a {
     font-size: 1.3rem;
+    @include mq(small) { width: 50%; }
   }
 }

@@ -10,7 +10,13 @@ const params = "$query="
 const options = {
   method: "GET"
 }
+//get the previous results from local storage and populate if it's there
+let previousSearch = localStorage.getItem('userSearch')
+if (previousSearch) {
+  document.querySelector('footer').style.position = 'static'
 
+  searchSection.innerHTML = previousSearch
+}
 form.addEventListener('submit', e => {
   e.preventDefault()
 
@@ -28,7 +34,7 @@ form.addEventListener('submit', e => {
     .catch(error => {
       console.log('An Error Occured:', error)
       searchSection.innerHTML = `
-        <h2>Results for ${input.value}</h2>
+        <h2>Results for <span>${input.value}</span></h2>
                   <div class="wrapper">
 
                   <p>No results to show</p>
@@ -57,8 +63,10 @@ const renderData = (data) => {
 })
   //to keep the footer at the bottom of the page
   document.querySelector('footer').style.position = 'static'
-  results += '<p class="button"><a href="#">View More on Marvel</a></p>'
   results += '</div>'
+  results += '<p class="button"><a href="#">View More on Marvel</a></p>'
+  //save their results to the local storagae
+  localStorage.setItem('userSearch', results)
   searchSection.innerHTML = results
   results = ""
 }

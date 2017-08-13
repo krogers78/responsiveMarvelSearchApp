@@ -11,6 +11,11 @@
 .wrapper {
   width: 85%;
   @extend %center-align;
+
+  @include mq(small) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .button {
   @extend %center-align;
@@ -19,7 +24,6 @@
   margin-bottom: 5rem;
   text-align: center;
   font-weight: bold;
-  font-size: 1.3rem;
   background: $action-color;
   padding: 2rem 5rem;
   border-radius: 0.5rem;
