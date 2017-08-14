@@ -18,3 +18,9 @@
     @media (min-width: 1200px) { @content; }
   }
 }
+@mixin search-placement($top, $size) {
+  top: $top;
+  width: $size;
+  height: $size;
+  background-size: $size;
+}

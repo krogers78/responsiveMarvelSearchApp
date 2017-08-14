@@ -11,5 +11,6 @@ footer {
     color: #EEEEEE;
     text-align: center;
     @include mq(small) { font-size: 1.5rem; }
+    @include mq(medium) { font-size: 1.8rem; }
   }
 }

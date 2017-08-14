@@ -6,16 +6,13 @@
 // Base Styles
 @import 'base/reset.scss';
 @import 'base/basesetup.scss';
-@import 'base/footer.scss';
 
 // Layout-specific styles
 
 // Component Styles
+@import 'components/footer.scss';
 @import 'components/header.scss';
 @import 'components/classes.scss';
 @import 'components/search.scss';
 @import 'components/results.scss';
-@import 'layout/mq.scss';
-
-
 @import 'components/nav.scss';

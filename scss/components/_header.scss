@@ -18,6 +18,8 @@ header {
   }
   h1 {
     width: 40%;
+    float: left;
+    @include mq(large) { float: none; }
   }
   img {
     width: 100%;
@@ -27,6 +29,8 @@ header {
   nav {
     padding-bottom: 2rem;
     @include mq(medium) { padding-top: 2rem; }
+    @include mq(large) { padding-top: 3rem; }
+    @include mq(xlarge) { padding-top: 4rem; }
     ul {
      @include mq(medium) {
        display: flex;
@@ -42,6 +46,7 @@ header {
     color: #DDD;
     font-size: 2rem;
     @include mq(medium) { font-size: 1.8rem; }
+    @include mq(xlarge) { font-size: 2rem; }
     &:hover {
       color: white;
     }
@@ -52,7 +57,7 @@ header {
     @include mq(medium) { display: none; }
   }
   button {
-    text-indent: -999rem;
+    @extend %hide-text;
     background-color: transparent;
     background-image: url("../images/hamburger.png");
     background-repeat: no-repeat;
@@ -60,7 +65,6 @@ header {
     height: 2.5rem;
     width: 2.5rem;
     margin-top: 2rem;
-
     @include mq(small) {
       background-size: 3rem;
       height: 3rem;

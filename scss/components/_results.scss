@@ -19,6 +19,8 @@
       color: #FF0000;
     }
     @include mq(small) { font-size: 1.6rem; }
+    @include mq(medium) { font-size: 2rem; }
+    @include mq(large) { font-size: 2.2rem; }
   }
   article {
     display: flex;
@@ -35,7 +37,6 @@
       height: 100%;
       @include mq(small) {
         width: 100%;
-        // height: 100%;
       }
     }
     h3, p {
@@ -47,14 +48,26 @@
       filter: brightness(95%);
       font-size: 1.2rem;
       @include mq(small) { font-size: 1.5rem; }
+      @include mq(large) { font-size: 1.8rem; }
     }
     p {
       font-size: 1rem;
       @include mq(small) { font-size: 1.2rem; }
+      @include mq(large) { font-size: 1.5rem; }
     }
   }
   a {
     font-size: 1.3rem;
+    color: $seconday-color;
     @include mq(small) { width: 50%; }
+    @include mq(medium) {
+      width: 33%;
+      font-size: 1.5rem;
+    }
+    @include mq(large) {
+      width: 25%;
+      font-size: 2rem;
+    }
+    @include mq(xlarge) { width: 20%; }
   }
 }

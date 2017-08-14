@@ -23,6 +23,10 @@
       font-size: 1.6rem;
       width: 34rem;
     }
+    @include mq(large) {
+      font-size: 2rem;
+      width: 42rem;
+    }
   }
   input {
     display: block;
@@ -30,12 +34,18 @@
     width: 100%;
     background: $primary-color;
     padding: 0 2.5rem 0 1rem;
+    @include mq(medium) { height: 4.5rem; }
+    @include mq(large) {
+      height: 5.4rem;
+      font-size: 2rem;
+      padding-right: 5.5rem;
+    }
 
   }
   button {
     background-image: url("../images/search.png");
     background-color: transparent;
-    text-indent: -999rem;
+    @extend %hide-text;
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -44,5 +54,7 @@
     background-size: 2rem;
     background-repeat: no-repeat;
     @include mq(small) { top: 7.2rem; }
+    @include mq(medium) { @include search-placement(8.2rem, 3rem); }
+    @include mq(large) { @include search-placement(8.7rem, 4rem); }
   }
 }

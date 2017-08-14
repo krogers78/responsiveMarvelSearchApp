@@ -27,4 +27,8 @@
   background: $action-color;
   padding: 2rem 5rem;
   border-radius: 0.5rem;
+
+  @include mq(large) {
+    width: 30rem;
+  }
 }
